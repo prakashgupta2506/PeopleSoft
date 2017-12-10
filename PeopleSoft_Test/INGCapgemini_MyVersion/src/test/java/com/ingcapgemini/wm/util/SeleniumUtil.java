@@ -8,6 +8,7 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -212,7 +213,8 @@ public class SeleniumUtil {
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss-sss");
 		String strDate = formatter.format(date);
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File(ScreenShotFolder +"//"+screenShotFileName+date.getTime()+".png"));
+		//Files.copy(scrFile, new File(ScreenShotFolder +"//"+screenShotFileName+date.getTime()+".png"));
+		//FileUtils.copyFile(scrFile, new File(ScreenShotFolder +"//"+screenShotFileName+date.getTime()+".png"));
 	}
 	
 /*	public static void takeScreenShot() throws IOException {

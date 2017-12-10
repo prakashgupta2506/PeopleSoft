@@ -1,4 +1,4 @@
-package src.com.capgemini.java.firstpackage;
+package com.capgemini.java.firstpackage;
 
 public class JustLikeThat {
 

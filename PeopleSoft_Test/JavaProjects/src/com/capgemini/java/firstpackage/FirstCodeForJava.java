@@ -1,4 +1,6 @@
-package src.com.capgemini.java.firstpackage;
+package com.capgemini.java.firstpackage;
+import java.util.ArrayList;
+
 import  com.capgemini.java.secondpackage.*;
 public class FirstCodeForJava {
 	
@@ -6,12 +8,9 @@ public class FirstCodeForJava {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		System.out.println(System.getProperty("user.dir"));
 		
-		
-		
-		
-		
-		
+		System.exit(0);
 		String we="SCR01_TC001;SCRO1_TC001_2";
 		System.out.println(we.split(";")[1]);
 		
@@ -38,7 +37,28 @@ public class FirstCodeForJava {
 		
 		
 		
-		//aray
+		//array
+		//arraylist
+		
+		ArrayList arrayList1 = new ArrayList(); //OR ArrayList<String> arrayList1 = new ArrayList<String>();
+		  arrayList1.add("Ajeet");
+		  arrayList1.add("Harry");
+		  System.out.println(arrayList1.size());
+		  System.out.println(arrayList1);
+		  arrayList1.remove("Harry");
+		  System.out.println(arrayList1.size());
+		  arrayList1.remove(0);
+		  System.out.println(arrayList1.size());
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		
+		
+		
 		int arr[];
 		arr=new int[3];
 		for(int i=0;i<arr.length;i++){
@@ -81,7 +101,28 @@ public class FirstCodeForJava {
 		
 		}
 		
+		
+		
+		
+		
+		
 		// if-else
+		
+		String ans;
+		int n=3;
+		if(n%2==1||(n%2==0 && n>=6 && n<=20)){
+	           ans = "Weird";
+	         }
+	         else
+	            {             
+	             if((n%2==0 && n>=2 && n<=5)||(n%2==0 && n>20))
+	                 ans="Not Weird";  	      
+	         }
+		
+		
+		
+		//multiple if-else
+		
 		int marks = 65;
 		if (marks < 50) {
 			System.out.println("fail");
