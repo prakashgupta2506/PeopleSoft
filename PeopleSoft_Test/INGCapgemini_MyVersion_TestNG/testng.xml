@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="false">
+<!-- <listeners>
+       <listener class-name="com.salesforce.testng.ActionAfterFailePassTestFromTestNG"/>
+       <listener class-name="com.salesforce.testng.RetryListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners> -->
+	<test name="Test1">
+		<classes>
+			<class name="com.ingCapgemini.testngproject.test.SearchItem" />	
+			<!-- <class name="com.ingCapgemini.testngproject.test.LoginToApplication"/>	 -->
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
