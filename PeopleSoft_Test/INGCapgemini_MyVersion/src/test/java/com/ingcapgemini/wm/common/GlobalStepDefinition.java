@@ -118,7 +118,13 @@ public class GlobalStepDefinition {
 
 	}
 
-	
+
+	@Given("^Just Run$")
+	public void just_Run() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    System.out.println("I have run !!!");
+	    
+	}
 	
 	
 		

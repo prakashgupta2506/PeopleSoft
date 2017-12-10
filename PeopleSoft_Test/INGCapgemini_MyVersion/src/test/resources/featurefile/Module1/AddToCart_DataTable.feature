@@ -2,6 +2,19 @@
 Feature: FR01 
 #Checkout related scenarios like add to cart,remove,payment etc.
 
+@JustRun
+Scenario: JustRun
+Given Just Run
+
+
+
+@JustRun-Login
+Scenario: JustRun-Login
+Given user "Admin" login into the application with correct credentials DataTable
+And verify that User successfully log out of the application
+
+
+
 @AddToCart_FR01_SCR001
 Scenario: SCR001 
 #Add a single item into cart and then remove it

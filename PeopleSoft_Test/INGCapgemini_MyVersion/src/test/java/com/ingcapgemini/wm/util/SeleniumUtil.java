@@ -55,7 +55,8 @@ public class SeleniumUtil {
 	// private static WebConnector webConnector = WebConnector.getInstance();
 	private static int BROWSER_SYNC;
 	private static int WEBLEMENT_SYNC;
-
+	public static int BROWSER;
+	public static int ENV;
 	
 
 	
@@ -90,6 +91,14 @@ public class SeleniumUtil {
 				WEBLEMENT_SYNC = Integer
 						.parseInt(configProperties.getProperty("WebElementSync"));
 						
+				if(System.getProperty("Browser")==null){
+					System.setProperty("Browser", configProperties.getProperty("Browser"));
+					
+				}
+				if(System.getProperty("ENV")==null){
+					System.setProperty("ENV", configProperties.getProperty("Env"));
+					
+				}
 			
 			}catch(Exception e){
 				System.out.println("!!!!!!!!!!!!!!!!!!!!Inside catch block"+e.getMessage());
@@ -120,7 +129,7 @@ public class SeleniumUtil {
 			    LOGGER.debug("FireFox Browser launched successfully");
 			}
 			//else if("IE".equalsIgnoreCase(System.getProperty("Browser")) && IE==null){
-					else if("IE".equalsIgnoreCase(System.getProperty("Browser"))){
+					else if("ie".equalsIgnoreCase(System.getProperty("Browser"))){
 				LOGGER.info("Inside IE browser initialization");
 					System.out.println("i am inside IE");
 					 System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\IEDriverServer_32.exe");
@@ -129,7 +138,7 @@ public class SeleniumUtil {
 					LOGGER.debug("IE Browser launched successfully");
 				}
 			//else if("Chrome".equalsIgnoreCase(System.getProperty("Browser")) && chrome==null){
-				else if("Chrome".equalsIgnoreCase(System.getProperty("Browser"))){
+				else if("chrome".equalsIgnoreCase(System.getProperty("Browser"))){
 				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\chromedriver.exe");
 						driver= new ChromeDriver();	
 						chrome=driver;
