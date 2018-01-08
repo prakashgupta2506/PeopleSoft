@@ -138,11 +138,8 @@ public class GlobalStepDefinition {
 				scenario.embed(screenshot, "image/png"); // stick it in the report
 				SeleniumUtil.takeScreenShot(scenario.getId());//forecfully takescreenshot..
 						
-						
-										
+											
 				
-												
-							
 				
 			}
 		}

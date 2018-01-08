@@ -46,15 +46,16 @@ public class TestRunner {
 	public static void beforeClass(){ //For BeforeClass annotation static is compulsory because JVM calls it directly
 
 		
-		
-		if(System.getProperty("Browser")==null){
+		//MOVED TO SELENIUMUTIL..reading from configfile
+		/*if(System.getProperty("Browser")==null){
 			System.setProperty("Browser", "chrome");
 			
 		}
 		if(System.getProperty("ENV")==null){
 			System.setProperty("ENV", "SIT");
 			
-		}
+		}*/
+		
 				
 		//for one time driver object initialization
 		//SeleniumUtil.initializeSeleniumConnector();

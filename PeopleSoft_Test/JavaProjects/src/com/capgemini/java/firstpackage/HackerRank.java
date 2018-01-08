@@ -50,8 +50,8 @@ class MyCalculator implements AdvancedArithmetic {
 	}
 	
 }
-*/
 
+*/
 
 /*//abstract class
 abstract class Book {
@@ -111,10 +111,10 @@ public class HackerRank {
         
         
 		
-		/*//Interface
+	/*	//Interface
 		MyCalculator my_calculator = new MyCalculator();
-		System.out.print(my_calculator.divisor_sum(6) + "\n");*/
-		
+		System.out.print(my_calculator.divisor_sum(6) + "\n");
+		*/
 		
 		/*//abstract class				
 		Scanner sc=new Scanner(System.in);
