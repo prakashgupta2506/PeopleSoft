@@ -96,10 +96,7 @@ public class SeleniumLearning {
 			System.exit(0);
 			
 			
-			
-			//String parentHandle = driver.getWindowHandle(); // get the current window handle
-			//Set handles = driver.getWindowHandles();
-			//String winHandle=handles.iterator().next();
+		
 			
 			driver.get("http://only-testing-blog.blogspot.in/");
 			driver.manage().window().maximize();
@@ -122,7 +119,14 @@ public class SeleniumLearning {
 			//Return a set of window handle 
 			Set<String> handles = driver.getWindowHandles();
 			String childWindowId=null;
+			
+			//or directly use...instead of below lines...
+			//String childWindow=handles.iterator().next();
+			
 			Iterator<String> it=handles.iterator();
+			
+			
+			
 			
 			
 			while (it.hasNext()) {
@@ -224,9 +228,12 @@ public class SeleniumLearning {
 			profile.setAcceptUntrustedCertificates(true);
 			profile.setAssumeUntrustedCertificateIssuer(false);
 			WebDriver driver=new FirefoxDriver(profile);
-
+ 			or DesiredCapabilities capabilities = DesiredCapabilities.firefox();  but test it....
+ 			
+ 			
+ 			
 			IE
-			DesiredCapabilities capabilities = new DesiredCapabilities();
+			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			WebDriver driver = new InternetExplorerDriver(capabilities);
 
@@ -235,7 +242,6 @@ public class SeleniumLearning {
 			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true)
 			WebDriver driver = new ChromeDriver(capabilities);
 	*/
-			
 			
 			
 			//launch default page

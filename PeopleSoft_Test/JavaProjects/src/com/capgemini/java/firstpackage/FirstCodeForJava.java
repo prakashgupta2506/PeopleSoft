@@ -15,7 +15,7 @@ public class FirstCodeForJava {
 		System.out.println(we.split(";")[1]);
 		
 	
-		
+
 		System.exit(0);
 		//automatically constructor of Test is called when it is extended by ExtendTest		
 		ExtendTest c=new ExtendTest();
@@ -45,6 +45,11 @@ public class FirstCodeForJava {
 		  arrayList1.add("Harry");
 		  System.out.println(arrayList1.size());
 		  System.out.println(arrayList1);
+		  
+		  for(int i=0;i<arrayList1.size();i++){
+				System.out.println(arrayList1.get(i));
+			}
+		  
 		  arrayList1.remove("Harry");
 		  System.out.println(arrayList1.size());
 		  arrayList1.remove(0);
@@ -245,7 +250,7 @@ public class FirstCodeForJava {
 		Prakash p =new Prakash();
 		p.sleeping();
 		p.walking();
-		
+	
 
 //		------------------------------
 		
@@ -277,7 +282,7 @@ public class FirstCodeForJava {
 abstract class Person{
 	
 	abstract void sleeping();
-	 abstract void walking();
+	abstract void walking();
 }
 
 class Prakash extends Person{
